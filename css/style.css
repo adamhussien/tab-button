@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ font-family: sans-serif;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing:  0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+.title {
+
+    text-align: center;
+}
+.about-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+   
+}
+.about {
+    background:#D0D0D0 ;
+    padding: 20px 2px 0px;
+    border-radius: 0.5rem; 
+}
+.aboutimg {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+   
+}
+.about, img {
+    border-radius: 0.5rem;
+}
+.btncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.tabbtn {
+    border: none;
+    font-size: 25px;
+    display: block;
+    outline: none;
+    padding: 12px;
+    background: #15161C;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.tabbtn:hover {
+    background-color: #fff;
+    color: #15161C;
+}
+.tabbtn.active{
+    background: #fff;
+    color: #15161C;
+}
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
+@media screen and (max-width:730px ) {
+    .about-center {
+        display: flex;
+        flex-direction: column;
+    }
+}
